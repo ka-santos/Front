@@ -8,8 +8,8 @@ export default function Header() {
       <div className="logo">
         <Link to="/">
           <span className="logo-1">K</span>
-          <span className="logo-2">C</span>
-          <span className="logo-3">R</span>
+          <span className="logo-2">S</span>
+          <span className="logo-3">C</span>
         </Link>
       </div>
 
@@ -18,11 +18,25 @@ export default function Header() {
       <div className="search-bar">
         <input type="text" placeholder='Buscar "Apartamentos" ' />
         <div className="location">
-          <button className="search-bnt">
+          <button className="search-btn">
             <ion-icon name="search-outline"></ion-icon>
           </button>
         </div>
       </div>
+
+        {/* Botoes*/}
+        <nav className="navbar">
+          <ul>
+            <li>
+              <Link to='/signin' className="entrarBtn">Entrar</Link>
+            </li>
+
+            <li>
+              <Link to='/'className="anunciarBtn">Anunciar grátis</Link>
+            </li>
+            </ul>
+        </nav>
+
     </header>
   );
 }
